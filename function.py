@@ -10,9 +10,8 @@ def db_con():
         # take input from user
         Host = input("Enter host name: ").strip() or "localhost"
         User = input("Enter user name: ").strip() or "root"
-        Password = getpass.getpass("Enter Password: ") or "say my name 38" #Temp defualt password for testing, remove it later
-        Database = input("Enter database name: ").strip() or "exam" #Temp defualt database for testing, remove it latergit
-
+        Password = getpass.getpass("Enter Password: ")
+        Database = input("Enter database name: ").strip()
         try:
             # Attempt to connect to the database
             con = cr.connect(
