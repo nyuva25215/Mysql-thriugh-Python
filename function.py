@@ -11,7 +11,7 @@ def db_con():
         Host = input("Enter host name: ").strip() or "localhost"
         User = input("Enter user name: ").strip() or "root"
         Password = getpass.getpass("Enter Password: ")
-        Database = input("Enter database name: ").strip()
+        Database = input("Enter database name: ").strip() or "exam"
         try:
             # Attempt to connect to the database
             con = cr.connect(
