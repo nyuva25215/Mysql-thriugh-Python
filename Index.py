@@ -8,11 +8,19 @@ while True:
         print("Shuting down....")
         exit()
 
-    elif query == "connect to databse" or query == "connect" or  query == "connect to the database":
+    elif query == "connect":
+        
         db_con()
 
-    elif query == "show table" or query == "show tables":
+    elif query == "show table":
         Show_table()
+
+    elif query == "help":
+        print("Available commands:")
+        print("- connect: Connect to a MySQL database")
+        print("- show table: Show tables in the connected database")
+        print("- help: Show this help message")
+        print("- e: Exit the program")
 
 
 
