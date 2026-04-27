@@ -9,6 +9,11 @@ while True:
         exit()
 
     elif query == "connect":
+        global Host, User, Password, Database
+        Host = input("Enter host name: ").strip() or "localhost"
+        User = input("Enter user name: ").strip() or "root"
+        Password = getpass.getpass("Enter Password: ") or "say my name 38"
+        Database = input("Enter database name: ") or "exam"
         
         db_con()
 
